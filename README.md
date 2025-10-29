@@ -87,19 +87,30 @@ El sistema se diseña en una estructura modular que permite la extensión a futu
  Cada componente del sistema se encapsula en una clase, garantizando la abstracción y el mantenimiento del código.
 Proyecto_FresadoraPredictiva/
 │
+
 ├── data/
+
 │   ├── ai4i2020.csv
+
 │   ├── datos_simulados.csv
+
 │
 ├── src/
+
 │   ├── sensor.py          # Clase Sensor
+
 │   ├── fresadora.py       # Clase Fresadora
+
 │   ├── predictor.py       # Clase PredictiveModel
+
 │   ├── vision.py          # Detección de material (OpenCV / Mediapipe)
+
 │   ├── simulador.py       # Módulo de visualización industrial
+
 │   └── main.py            # Coordinador general del sistema
 
 5.1 Clases principales
+
 Clase Sensor
  Encapsula las lecturas simuladas de cada parámetro físico (temperatura, torque, velocidad).
  Genera valores aleatorios con distribución normal controlada.
